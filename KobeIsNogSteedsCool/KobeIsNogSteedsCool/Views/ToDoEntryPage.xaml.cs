@@ -8,13 +8,13 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace KobeIsNogSteedsCool.Views
-{
+    {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ToDoEntryPage : ContentPage
-    {
-        public ToDoEntryPage()
         {
+        public ToDoEntryPage()
+            {
             InitializeComponent();
+            }
         }
     }
-}
