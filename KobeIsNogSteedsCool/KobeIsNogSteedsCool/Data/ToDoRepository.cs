@@ -26,5 +26,14 @@ namespace KobeIsNogSteedsCool.Data
                 dbContext.SaveChanges();
                 }
             }
+
+        public void DeleteToDo(ToDo todo)
+            {
+            using (var dbContext = new KobeIsNogSteedsCoolContext())
+                {
+                dbContext.ToDos.Remove(todo);
+                dbContext.SaveChanges();
+                }
+            }
         }
     }
